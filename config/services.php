@@ -31,4 +31,13 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'payment' => [
+        'webhook_secret' => env('PAYMENT_WEBHOOK_SECRET'),
+        'khqr' => [
+            'merchant_id' => env('KHQR_MERCHANT_ID'),
+            'account_id' => env('KHQR_ACCOUNT_ID'),
+            'callback_url' => env('KHQR_CALLBACK_URL'),
+        ],
+    ],
+
 ];
